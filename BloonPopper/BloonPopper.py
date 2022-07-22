@@ -10,7 +10,7 @@ class balloon:
         self.y = 500
         self.bloonColor = None
         self.img = None
-        self.imgPopped = 'C:/Users/Imperalord/Code/Python Code/Pygame/BloonPopper/assets/bloonRedPopped.png'
+        self.imgPopped = 'assets/bloonRedPopped.png'
         self.popped = False
         self.popTimer = 5
     #Function to pick random balloon color    
@@ -19,25 +19,25 @@ class balloon:
         match color: 
             case 1:
                 self.bloonColor = 'Red'
-                self.img = 'C:/Users/Imperalord/Code/Python Code/Pygame/BloonPopper/assets/bloonRed.png'
+                self.img = 'assets/bloonRed.png'
                 self.popTimer = 5
             case 2:
                 self.bloonColor = 'Green'
-                self.img = 'C:/Users/Imperalord/Code/Python Code/Pygame/BloonPopper/assets/bloonGreen.png'
+                self.img = 'assets/bloonGreen.png'
             case 3:
                 self.bloonColor = "Blue"
-                self.img = 'C:/Users/Imperalord/Code/Python Code/Pygame/BloonPopper/assets/bloonBlue.png'
+                self.img = 'assets/bloonBlue.png'
     #Function to change balloon color when clicked            
     def checkPopped(self):
         if self.popped:
             if self.bloonColor == 'Blue':
                 self.bloonColor = 'Green'
-                self.img = 'C:/Users/Imperalord/Code/Python Code/Pygame/BloonPopper/assets/bloonGreen.png'
+                self.img = 'assets/bloonGreen.png'
                 self.popTimer = 0
                 self.popped = False
             elif self.bloonColor == 'Green':
                 self.bloonColor = 'Red'
-                self.img = 'C:/Users/Imperalord/Code/Python Code/Pygame/BloonPopper/assets/bloonRed.png'
+                self.img = 'assets/bloonRed.png'
                 self.popTimer = 0
                 self.popped = False
 #Initiate Pygame  with fonts and window caption              
